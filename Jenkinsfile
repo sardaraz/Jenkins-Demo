@@ -1,18 +1,19 @@
 pipeline {
     agent any
-
     stages {
         stage('Build') {
             steps {
-                bat 'mvn -B -DskipTests clean package' 
-            }
+                echo 'Allication build stage...' 
+        }
+       }
+        stage('Test') {
             steps {
-                bat 'javac HelloWorld.java'
-            }
+                echo 'Allication test stage' 
+        }
         }
         stage('Run') {
             steps {
-                bat 'java HelloWorld'
+                echo 'Allication run stage' 
             }
         }
     }
