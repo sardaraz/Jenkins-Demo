@@ -10,6 +10,7 @@ pipeline {
             steps {
         sh '''
           gcloud version
+          gcloud compute zones list
         '''
       }
         }
