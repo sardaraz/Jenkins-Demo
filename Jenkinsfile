@@ -8,8 +8,10 @@ pipeline {
        }
         stage('Test') {
             steps {
-                echo 'Allication test stage' 
-        }
+        sh '''
+          gcloud version
+        '''
+      }
         }
         stage('Run') {
             steps {
