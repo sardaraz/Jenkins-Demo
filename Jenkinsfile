@@ -17,7 +17,8 @@ pipeline {
         stage('Build') {
             steps {
                 // Run Python script directly without using nohup
-                sh 'python hello.py'
+                sh 'javac HelloWorld.java'
+                sh 'java HelloWorld'
             }
         }
     }
