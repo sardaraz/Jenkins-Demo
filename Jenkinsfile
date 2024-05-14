@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Allication build stage...' 
+                echo 'Application build stage...' 
         }
        }
         stage('Test') {
@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Run') {
             steps {
-                echo 'Allication run stage' 
+                echo 'Application run stage' 
             }
         }
     }
